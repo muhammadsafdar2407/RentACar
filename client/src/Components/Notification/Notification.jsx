@@ -35,7 +35,7 @@ const Notification = ({ socket }) => {
       getNotifications();
       if (socket?.current) {
         socket?.current.on("notify", (data) => {
-          // console.log(data);
+          console.log('Data:'+data);
           //set with previous state
           setNotify((prev) => [...prev, data]);
           setNotifyCount((prev) => prev + 1);
@@ -124,8 +124,8 @@ const Notification = ({ socket }) => {
                 <div className="pl-3 flex gap-3 items-center">
                   <div className="relative inline-flex items-center p-2 justify-center w-10 h-10 overflow-hidden bg-accent-1 rounded-full dark:bg-gray-600">
                     <span className="font-medium text-sm text-white dark:text-gray-300">
-                      {item.sender_name[0]}
-                      {item.sender_name[1]}
+                    {/* {item.sender_name[0]}
+                      {item.sender_name[1]} */}
                     </span>
                   </div>
                   <p className="text-sm leading-none flex flex-col gap-1">

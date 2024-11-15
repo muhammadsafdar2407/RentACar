@@ -5,7 +5,11 @@ dotenv.config();
 
 export async function isAuthenticated(req, res, next) {
   try {
+
     const token = req.cookies.session_token;
+    
+    console.log('token:'+token);
+    console.log('cookie:'+req.cookies);
 
     if (!token) {
       return res.status(401).send("Unauthorized");

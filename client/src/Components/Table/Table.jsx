@@ -11,7 +11,11 @@ function Table() {
 
   const getPosts = async () => {
     try {
-      const res = await axiosInstance.get("/post/getpostsbyuser");
+      const res = await axiosInstance.get("/post/getpostsbyuser", {
+        withCredentials: true, // Ensures cookies are included
+      });
+      
+      console.log(res.data);
       setListings(res.data);
     } catch (err) {
       console.log(err);
@@ -32,6 +36,7 @@ function Table() {
       console.log(res);
       getPosts();
       toastSuccess("Listing Deleted Successfully");
+      window.location.href = '/profile';
     } catch (err) {
       console.log(err);
     }
@@ -71,7 +76,7 @@ function Table() {
                 <th className="font-normal text-left pl-20">Price</th>
                 <th className="font-normal text-left pl-20">Listed On</th>
                 <th className="font-normal text-left pl-16">Average Rating</th>
-                <th className="font-normal text-left pl-4">Actions</th>
+                <th className="font-normal text-left pl-4">Action</th>
               </tr>
             </thead>
             <tbody className="w-full">
@@ -89,7 +94,7 @@ function Table() {
               )}
               {listings.map((listing, index) => (
                 <tr
-                  key={listing.vehicle_post_id}
+                  key={listing.vehicle_number}
                   className="h-20 text-sm leading-none text-gray-800 bg-white hover:bg-gray-100 border-b border-t border-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                 >
                   <td className="pl-4 cursor-pointer">
@@ -137,12 +142,9 @@ function Table() {
                     ⭐
                   </td>
                   <td className="px-8 2xl:px-0">
-                    <div className="flex items-center gap-5">
-                      <button className="bg-indigo-500 p-2 rounded-full text-white transform hover:text-white hover:bg-black button-transition">
-                        <FaEdit />
-                      </button>{" "}
-                      <button
-                        onClick={() => handleDelete(listing.vehicle_post_id)}
+                    <div className="flex items-center justify-center gap-5">
+                      <button 
+                        onClick={() => handleDelete(listing.vehicle_number)}
                         className=" bg-red-500 p-2  text-white hover:text-white hover:bg-black button-transition rounded-full"
                       >
                         <FaTrashAlt />

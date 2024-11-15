@@ -13,6 +13,7 @@ function RequestsTable({ socket }) {
     try {
       const res = await axiosInstance.get("/booking/getOwnerVehicles");
       setRequests(res.data);
+      console.log("Formatted Response Data:", JSON.stringify(res.data, null, 2));
     } catch (err) {
       console.log(err);
     }
@@ -84,9 +85,9 @@ function RequestsTable({ socket }) {
               <tr className="h-16 w-full text-sm leading-none text-gray-800 dark:text-white">
                 <th className="font-normal text-left pl-4">Vehicle</th>
                 <th className="font-normal text-left pl-20">Booked by</th>
+                <th className="font-normal text-left pl-20">Phone Number</th>
                 <th className="font-normal text-left pl-12">Booking Status</th>
                 <th className="font-normal text-left pl-20">Total Price</th>
-                <th className="font-normal text-left pl-20">Created On</th>
                 <th className="font-normal text-left pl-8">Booking Dates</th>
                 <th className="font-normal text-left pl-10 md:pl-4">Actions</th>
               </tr>
@@ -128,6 +129,11 @@ function RequestsTable({ socket }) {
                       {listing.customername}
                     </p>
                   </td>
+                  <td className="pl-20">
+                    <p className="font-medium">
+                      {listing.phone_number}
+                    </p>
+                  </td>
                   <td className="pl-12">
                     <p className="font-medium">
                       {listing.booking_status === "pending" ? (
@@ -148,18 +154,7 @@ function RequestsTable({ socket }) {
                   <td className="pl-20">
                     <p className="font-medium">Rs. {listing.total_price}</p>
                   </td>
-                  <td className="pl-20">
-                    <p className="font-medium">
-                      {listing.created_at.split("T")[0]}
-                    </p>
-                    <p className="text-xs leading-3 text-gray-400 mt-2">
-                      {Math.floor(
-                        (new Date() - new Date(listing.created_at)) /
-                          (1000 * 60 * 60 * 24)
-                      )}{" "}
-                      days ago
-                    </p>
-                  </td>
+                  
                   <td className="pl-8">
                     <p className="font-medium">{listing.start_date}</p>
                     <p className="text-xs leading-3 text-gray-400 mt-2">

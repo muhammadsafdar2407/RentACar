@@ -44,11 +44,27 @@ export const post = async (req, res) => {
     features,
     numberPlate,
   } = req.body;
+
   const user = req.user;
   const { customer_id } = user;
+
   try {
+    // Check if number plate already exists
+    const existingVehicle = await pool.query(
+      "SELECT * FROM vehicle_post WHERE vehicle_number = $1",
+      [numberPlate]
+    );
+
+    if (existingVehicle.rows.length > 0) {
+      return res.status(400).json({
+        success: false,
+        message: "Number plate already exists. Please use a unique number plate.",
+      });
+    }
+
+    // Insert the new vehicle post
     const newPost = await pool.query(
-      "INSERT INTO vehicle_post (vehicle_name, vehicle_type, vehicle_year ,vehicle_brand, address,vehicle_color, price_per_day , vehicle_description, vehicle_image, customer_id, vehicle_listing_type, vehicle_features, vehicle_number) VALUES ($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) RETURNING *",
+      "INSERT INTO vehicle_post (vehicle_name, vehicle_type, vehicle_year, vehicle_brand, address, vehicle_color, price_per_day, vehicle_description, vehicle_image, customer_id, vehicle_listing_type, vehicle_features, vehicle_number) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING *",
       [
         vehicleName,
         vehicleType,
@@ -65,16 +81,24 @@ export const post = async (req, res) => {
         numberPlate,
       ]
     );
-    res.status(200).json("Vehicle posted");
-    //res.redirect('/');
+
+    res.status(200).json({
+      success: true,
+      message: "Vehicle posted successfully",
+      data: newPost.rows[0],
+    });
+
+    // Optional: Redirect to another route if needed
+    // res.redirect('/');
   } catch (err) {
-    console.log(err);
-    res.status(401).json({
+    console.error(err);
+    res.status(500).json({
       success: false,
-      message: err.message,
+      message: "An error occurred while posting the vehicle",
     });
   }
 };
+
 
 // Route to get posts with pagination
 export const getPosts = async (req, res) => {
@@ -175,7 +199,8 @@ export const getPost = async (req, res) => {
 
 export const getPostByUser = async (req, res) => {
   const { customer_id } = req.user;
-  console.log(customer_id);
+  console.log('req: '+req.user);
+  console.log('customer: '+customer_id);
   try {
     const post = await pool.query(
       `SELECT 
@@ -211,6 +236,7 @@ export const getPostByUser = async (req, res) => {
 export const deletePost = async (req, res) => {
   const { id } = req.params;
   const { customer_id } = req.user;
+  console.log('id: '+id+'customer:'+customer_id);
   try {
     const post = await pool.query(
       "DELETE FROM vehicle_post WHERE vehicle_number = $1 AND customer_id = $2 RETURNING *",

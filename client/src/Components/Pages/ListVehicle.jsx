@@ -111,8 +111,10 @@ const ListVehicle = () => {
   const handleSubmit = async (e) => {
     setLoading(true);
     console.log("submit");
+    
     e.preventDefault();
     const error = validation(data);
+    console.log("number plate: "+error.numberPlate);
     setPostError({
       vehicleName: error.vehicleName,
       vehicleBrand: error.vehicleBrand,
@@ -127,6 +129,8 @@ const ListVehicle = () => {
       features: error.features,
       vehiclefile: error.vehiclefile,
     });
+
+    //console.log("number plate: "+postError.numberPlate);
 
     if (Object.keys(error).length === 0) {
       // const res = await axios.post("http://localhost:5000/post/listvehicle", data) ;
@@ -159,23 +163,41 @@ const ListVehicle = () => {
 
         console.log(data);
 
-        const res = await axiosInstance.post(
-          "/post/listvehicle",
-          data,
-
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
+        try {
+          const res = await axiosInstance.post(
+            "/post/listvehicle",
+            data,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+        
+          console.log("response: ", res);
+          toastSuccess("Vehicle Listed Successfully");
+          setLoading(false);
+        
+          if (res.status === 200) {
+            window.location.href = '/';
           }
-        );
-
-        console.log(res);
-        toastSuccess("Vehicle Listed Successfully");
-        setLoading(false);
-        if (res.status === 200) {
-          window.location.href = '/';
+        } catch (error) {
+          setLoading(false);
+          //console.log('error catched');
+        
+          // Handle specific error status
+          //console.log('code: '+error.response.status)
+          if (error.response && error.response.status === 400) {
+            // Display a specific message for unique number plate error
+            toastError(error.response.data.message || "Number plate must be unique!");
+          } else {
+            // Handle other errors
+            toastError("An error occurred while listing the vehicle. Please try again.");
+          }
+        
+          console.error("Error posting vehicle: ", error);
         }
+        
       } catch (error) {
         if (error.response.status === 422) {
           const errors = error.response.data.errors;

@@ -97,8 +97,9 @@ export const getOwnerVehicles = async (req, res) => {
   const { customer_id } = req.user;
 
   try {
-    const query = `SELECT b.*, vp.vehicle_name, vp.vehicle_image, c.customername FROM booking b INNER JOIN vehicle_post vp ON vp.vehicle_number = b.vehicle_number INNER JOIN customer c ON c.customer_id = b.booking_customer_id WHERE b.owner_id = $1;`;
+    const query = `SELECT b.*, vp.vehicle_name, vp.vehicle_image, c.customername, c.phone_number FROM booking b INNER JOIN vehicle_post vp ON vp.vehicle_number = b.vehicle_number INNER JOIN customer c ON c.customer_id = b.booking_customer_id WHERE b.owner_id = $1;`;
     const { rows } = await pool.query(query, [customer_id]);
+    console.log('Rows (formatted):', JSON.stringify(rows, null, 2));
     if (rows.length === 0) {
       return res.status(404).json({ message: "Booking not found" });
     }
