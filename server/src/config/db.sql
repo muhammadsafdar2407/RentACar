@@ -31,7 +31,7 @@ CREATE table vehicle_post(
     foreign key (customer_id) references customer(customer_id) on delete cascade
 );
 
-CREATE TABLE vehicle_post_comment (
+CREATE TABLE review (
     comment_id SERIAL PRIMARY KEY,
     vehicle_number varchar(50),
     customer_id UUID NOT NULL,

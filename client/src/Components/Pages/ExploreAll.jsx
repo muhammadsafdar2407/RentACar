@@ -57,11 +57,13 @@ const ExploreAll = () => {
         <div className="w-screen gap-5 grid justify-items-center content-center xl:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto max-w-[90%] xl:max-w-[1200px] mt-10">
           {posts.map((item) => (
             <ExploreCards
-              key={item.vehicle_post_id}
+              key={item.vehicle_number}
               vehicleName={item.vehicle_name}
               vehiclePrice={item.price_per_day}
               vehicleImage={item.vehicle_image}
               postedBy={item.customername}
+              vehicleNumber={item.vehicle_number}
+              rating={item.rating}
             />
           ))}
         </div>

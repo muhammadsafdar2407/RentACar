@@ -107,8 +107,7 @@ export const getPosts = async (req, res) => {
     const offset = (page - 1) * limit;
 
     const { rows } = await pool.query(
-      `SELECT vehicle_post.*, customer.customername FROM vehicle_post INNER JOIN customer ON vehicle_post.customer_id = customer.customer_id ORDER BY vehicle_post.created_at DESC LIMIT $1 OFFSET $2
-    `,
+      `SELECT vehicle_post.*, customer.customername, review.rating FROM vehicle_post INNER JOIN customer ON vehicle_post.customer_id = customer.customer_id LEFT JOIN review ON vehicle_post.vehicle_number = review.vehicle_number ORDER BY vehicle_post.created_at DESC LIMIT $1 OFFSET $2;`,
       [limit, offset]
     );
     const totalPosts = await pool.query("SELECT COUNT(*) FROM vehicle_post");

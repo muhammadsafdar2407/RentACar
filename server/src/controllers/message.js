@@ -7,7 +7,7 @@ export const createMessage = async (req, res) => {
 
   try {
     const messageResult = await pool.query(
-      "INSERT INTO chat_message (sender_id, receiver_id, message,conversation_id) VALUES ($1, $2, $3, $4) RETURNING *;",
+      "INSERT INTO message (sender_id, receiver_id, message,conversation_id) VALUES ($1, $2, $3, $4) RETURNING *;",
       [customer_id, receiver_id, message_text, conversation_id]
     );
     const newMessage = messageResult.rows[0];
@@ -28,7 +28,8 @@ export const getMessages = async (req, res) => {
       [conversation_id]
     );
     const messages = messagesResult.rows;
-
+    console.log("msgs");
+    console.log(messages);
     return res.status(200).json(messages);
   } catch (err) {
     console.error(err);

@@ -21,6 +21,7 @@
     "framer-motion": "^10.12.16",
     "google-map-react": "^2.2.0",
     "heroicons": "^2.0.18",
+    "js-cookie": "^3.0.5",
     "leaflet": "^1.9.3",
     "preline": "^1.8.0",
     "react": "^18.2.0",

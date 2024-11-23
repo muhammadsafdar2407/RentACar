@@ -53,12 +53,14 @@ function Table() {
           <table className="w-full whitespace-nowrap">
             <thead>
               <tr className="h-16 w-full text-sm leading-none text-gray-800 dark:text-white">
-                <th className="font-normal text-left pl-4">Vehicle</th>
-                <th className="font-normal text-left pl-20">Type</th>
-                <th className="font-normal text-left pl-12">Brand</th>
-                <th className="font-normal text-left pl-20">Price</th>
-                <th className="font-normal text-left pl-20">Listed On</th>
-                <th className="font-normal text-left pl-24">Actions</th>
+                <th className="font-normal text-center pl-2">Vehicle</th>
+                <th className="font-normal text-center pl-2">Type</th>
+                <th className="font-normal text-center pl-15">Brand</th>
+                <th className="font-normal text-center pl-15">Owner</th>
+                <th className="font-normal text-center pl-15">Owner Phone</th>
+                <th className="font-normal text-center pl-15">Price</th>
+                <th className="font-normal text-center pl-15">Booking Dates</th>
+                <th className="font-normal text-center pl-15">Status</th>
               </tr>
             </thead>
             <tbody className="w-full">
@@ -79,7 +81,7 @@ function Table() {
                   key={listing.vehicle_post_id}
                   className="h-20 text-sm leading-none text-gray-800 bg-white hover:bg-gray-100 border-b border-t border-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                 >
-                  <td className="pl-4 cursor-pointer">
+                  <td className="pl-2 cursor-pointer">
                     <div className="flex items-center">
                       <img
                         src={listing.vehicle_image}
@@ -91,45 +93,48 @@ function Table() {
                       </div>
                     </div>
                   </td>
-                  <td className="pl-20">
-                    <p className="text-sm font-medium leading-none">
+                  <td className="pl-2">
+                    <p className="text-sm font-medium leading-none text-center">
                       {listing.vehicle_type}
                     </p>
                   </td>
-                  <td className="pl-12">
-                    <p className="font-medium">{listing.vehicle_brand}</p>
-                    <p className="text-xs leading-3 text-gray-600 dark:text-gray-400 mt-2">
+                  <td className="pl-15">
+                    <p className="font-medium text-center">{listing.vehicle_brand}</p>
+                    <p className="text-xs leading-3 text-gray-600 dark:text-gray-400 mt-2 text-center">
                       Model : {listing.vehicle_year}
                     </p>
                   </td>
-                  <td className="pl-20">
-                    <p className="font-medium">Rs. {listing.price_per_day}</p>
-                  </td>
-                  <td className="pl-20">
-                    <p className="font-medium">
-                      {listing.created_at.split("T")[0]}
-                    </p>
-                    <p className="text-xs leading-3 text-gray-600 dark:text-gray-400 mt-2">
-                      {Math.floor(
-                        (new Date() - new Date(listing.created_at)) /
-                          (1000 * 60 * 60 * 24)
-                      )}{" "}
-                      days ago
+                  <td className="pl-15">
+                    <p className="text-sm font-medium leading-none text-center">
+                      {listing.customername}
                     </p>
                   </td>
 
-                  <td className="px-8 2xl:px-0">
-                    <div className="flex items-center gap-5">
-                      <button className="bg-indigo-500 p-2 rounded-full text-white transform hover:text-white hover:bg-black button-transition">
-                        <FaEdit />
-                      </button>{" "}
-                      <button
-                        onClick={() => handleDelete(listing.vehicle_post_id)}
-                        className=" bg-red-500 p-2  text-white hover:text-white hover:bg-black button-transition rounded-full"
-                      >
-                        <FaTrashAlt />
-                      </button>
-                    </div>
+                  <td className="pl-15">
+                    <p className="text-sm font-medium leading-none text-center">
+                      {listing.phone_number}
+                    </p>
+                  </td>
+                  
+                  <td className="pl-15">
+                    <p className="font-medium text-center">Rs. {listing.total_price}</p>
+                  </td>
+                  <td className="pl-15">
+                    <p className="font-medium text-center">
+                      {listing.start_date}
+                    </p>
+                    <p className="text-xs leading-3 text-gray-600 dark:text-gray-400 mt-2 my-2 text-center">
+                      TO
+                    </p>
+                    <p className="font-medium text-center">
+                      {listing.end_date}
+                    </p>
+                  </td>
+
+                  <td className="pl-15">
+                    <p className="text-sm font-medium leading-none text-center">
+                      {listing.booking_status}
+                    </p>
                   </td>
                 </tr>
               ))}
