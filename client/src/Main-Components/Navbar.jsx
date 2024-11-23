@@ -119,7 +119,7 @@ const Navbar = ({ socket }) => {
                   <div className="flex justify-center items-center gap-2 ">
                     <div>
                       <div className="flex justify-center items-center gap-4 ">
-                        <Link to="/messenger">
+                      <Link to="/messenger">
                           <div className="p-[10px] rounded-full bg-accent-1 text-white hidden md:block">
                             <AiFillMessage className="text-3xl" />
                           </div>

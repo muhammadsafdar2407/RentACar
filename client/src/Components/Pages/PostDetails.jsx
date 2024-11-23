@@ -435,12 +435,11 @@ const PostDetails = ({ socket }) => {
                       Car owner:
                     </span>
                     <span className="text-white text-xl font-medium flex gap-3 items-center">
-                      <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                      <div className="relative inline-flex items-center justify-center w-250 h-10 px-4 py-2 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                         <span className="font-medium text-gray-600 dark:text-gray-300">
-                          {post.customername ? post.customername[0] : "A"}
+                          {post.customername ?post.customername: "A"}
                         </span>
                       </div>
-                      {post.customername}
                     </span>
                   </h1>
                 </div>
@@ -461,7 +460,7 @@ const PostDetails = ({ socket }) => {
                       ) : (
                         <TbBike className="text-2xl" />
                       )}
-                      <h1>Vehicle Type: {post.vehicle_type}</h1>
+                      <h1>Model: {post.vehicle_year}</h1>
                     </div>
                     <div className=" px-2 py-5 border border-gray-300 gap-2 flex justify-center items-center rounded-xl dark:text-accent-3 dark:glass">
                       <MdOutlineMergeType className="text-2xl" />
@@ -474,10 +473,14 @@ const PostDetails = ({ socket }) => {
                     </h1>
                     <h1 className="mt-2">
                       {post.vehicle_description}
-                      lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam voluptas, quod, quia, quae voluptates quibusdam
-                      voluptatibus voluptatum quidem quos quas nesciunt.
-                      Quisquam, quae.
+                    </h1>
+
+
+                    <h1 className="text-[32px] mt-6 text-left font-semibold text-black dark:text-accent-3">
+                      Features
+                    </h1>
+                    <h1 className="mt-2">
+                      {post.vehicle_features}
                     </h1>
 
                     <button

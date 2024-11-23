@@ -47,10 +47,10 @@ const Messenger = ({ socket }) => {
 
     setMessage("");
     try {
-      // const response = await axiosInstance.post("/chat/createMessage", data);
-      // socket.current.emit("newMessage", response.data);
-      // console.log(response.data);
-      // console.log(messages);
+      const response = await axiosInstance.post("/chat/createMessage", data);
+      socket.current.emit("newMessage", response.data);
+      console.log(response.data);
+      console.log(messages);
     } catch (err) {
       console.log(err);
     }

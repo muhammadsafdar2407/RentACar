@@ -1,6 +1,12 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useContext} from "react";
+import { AuthContext } from "../Context/AuthContext";
+
 
 const Footer = () => {
+  const {user} = useContext(AuthContext);
+
   return (
     <div>
       <footer className="bg-white dark:bg-dark-main border-t dark:border-t-gray-800 text-gray-800 ">
@@ -16,44 +22,53 @@ const Footer = () => {
             </div>
 
             <div className="col-span-1">
-              <h4 className="font-semibold text-gray-800 dark:text-accent-1">
+              {/* <h4 className="font-semibold text-gray-800 dark:text-accent-1">
                 Membership
-              </h4>
+              </h4> */}
 
               <div className="mt-3 grid space-y-3">
                 <div>
+                <Link to="/about">
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    Pricing
+                    About
                   </div>
+                  </Link>
                 </div>
                 <div>
+                  <Link to="/mybookings">
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    Terms And Conditions
+                  My Bookings
                   </div>
+                  </Link>
                 </div>
                 <div>
+                  <Link to="/listvehicle">
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    Book a trial
+                    List Your Vehicle
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="col-span-1">
-              <h4 className="font-semibold text-gray-800 dark:text-accent-1">
-                Company
-              </h4>
-
               <div className="mt-3 grid space-y-3">
                 <div>
+                  <Link to="/profile">
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    About us
+                    Profile
                   </div>
+                  </Link>
                 </div>
+                
                 <div>
+                  <Link 
+                  to={`/editprofile/user_id=${user.customer_id}`}
+                  >
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    Blog
+                    Edit Profile
                   </div>
+                  </Link> 
                 </div>
                 <div>
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
