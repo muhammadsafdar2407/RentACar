@@ -78,25 +78,27 @@ const Navbar = ({ socket }) => {
             <div className="menu-items flex justify-center items-center gap-7 ">
               <div className="">
                 <div className="hidden lg:flex justify-center items-center gap-8 cursor-pointer top-0 ">
-                  <Link to="/">
+                  
+
+                  <Link to="/about">
                     <div className="flex items-center gap-2">
-                      <div className="font-semibold text-lg text-gray-700 dark:text-accent-3 ">
-                        Home
+                      <div className="font-semibold text-lg text-gray-700 dark:text-accent-3">
+                        About
                       </div>
                     </div>
                   </Link>
 
-                  <Link to="/about">
+                  <Link to="/profile">
                     <div className="flex items-center gap-2">
-                      <div className="font-medium text-lg text-gray-700 dark:text-accent-3">
-                        About
+                      <div className="font-semibold text-lg text-gray-700 dark:text-accent-3 ">
+                        My Profile
                       </div>
                     </div>
                   </Link>
 
                   <Link to="/mybookings">
                     <div className="flex items-center gap-2">
-                      <div className="font-medium text-gray-700 dark:text-accent-3 text-lg">
+                      <div className="font-semibold text-gray-700 dark:text-accent-3 text-lg">
                         My Bookings
                       </div>
                     </div>

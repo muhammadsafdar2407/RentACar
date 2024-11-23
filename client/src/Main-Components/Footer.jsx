@@ -1,11 +1,48 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useContext} from "react";
+import {useContext,useState} from "react";
 import { AuthContext } from "../Context/AuthContext";
+import axios from "axios";
 
 
 const Footer = () => {
   const {user} = useContext(AuthContext);
+
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent page reload on form submission
+
+    if (!email) {
+      setMessage("Please enter your email.");
+      return;
+    }
+
+    try {
+      console.log(user.customer_id);
+      const response = await axios.post("http://localhost:5000/promotion", {
+        email,
+        customerId: user.customer_id, // Ensure customer_id exists
+      });
+
+      if (response.status === 200) {
+        setMessage("Subscription successful! Thank you for subscribing.");
+        setEmail(""); // Clear the input field
+      }
+    } catch (error) {
+      if (error.response) {
+        if (error.response.status === 409) {
+          setMessage("This email is already subscribed.");
+        } else {
+          setMessage("An error occurred. Please try again.");
+        }
+      } else {
+        setMessage("Unable to connect to the server. Please try again later.");
+      }
+    }
+  };
+
 
   return (
     <div>
@@ -28,11 +65,12 @@ const Footer = () => {
 
               <div className="mt-3 grid space-y-3">
                 <div>
-                <Link to="/about">
+                <Link to='/explore'>
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    About
+                    Explore
                   </div>
                   </Link>
+                
                 </div>
                 <div>
                   <Link to="/mybookings">
@@ -71,47 +109,41 @@ const Footer = () => {
                   </Link> 
                 </div>
                 <div>
+                <Link to="/about">
                   <div className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400">
-                    Customers
+                    About
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="col-span-2">
-              <h4 className="font-semibold text-gray-800 dark:text-accent-1">
-                Stay up to date
-              </h4>
+            <h4 className="font-semibold text-gray-800">Stay up to date</h4>
 
-              <form>
-                <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white dark:bg-transparent rounded-md">
-                  <div className="w-full">
-                    <label htmlFor="hero-input" className="sr-only">
-                      Search
-                    </label>
-                    <input
-                      type="text"
-                      id="hero-input"
-                      name="hero-input"
-                      className="py-3 px-5 block w-full border border-gray-200 dark:border-gray-800 rounded-md dark:bg-gray-800 "
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  <div className="w-full sm:w-auto whitespace-nowrap inline-flex justify-center items-center gap-x-3 text-center dark:bg-accent-1 bg-accent-2 hover:bg-black button-transition text-white rounded-xl py-3 px-4">
-                    Subscribe
-                  </div>
-                </div>
-                <p className="mt-3 text-sm text-gray-600">
-                  New Vehicles, Safe, Reliable and Afforadable.
-                </p>
-              </form>
-            </div>
+            <form onSubmit={handleSubmit}>
+              <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="py-3 px-5 block w-full border border-gray-200 rounded-md"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button type="submit" className="py-2 px-4 bg-blue-600 text-white rounded-md">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            {message && <p className="mt-2 text-sm">{message}</p>}
+          </div>
           </div>
 
           <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
             <div className="flex justify-between items-center">
               <p className="text-sm text-gray-600">
-                © 2022 TyzFit. All rights reserved.
+                © 2024 DISCIMUS
               </p>
             </div>
 

@@ -54,7 +54,7 @@ const ExploreCards = (props) => {
             </button>
           </div>
           <div className="flex m-5 items-center justify-between md:items-center lg:justify-between ">
-            <Link to={`/explore/${props.postId}`}>
+            <Link to={`/explore/${props.vehicleNumber}`}>
               <button className="p-2 bg-accent-1 font-semibold text-white px-5 rounded-xl hover:text-black hover:border hover:border-gray-500 hover:bg-white transition-all ease-in-out duration-300">
                 Book
               </button>
@@ -62,13 +62,12 @@ const ExploreCards = (props) => {
 
             <div className="flex">
               <div className="flex flex-row-reverse items-center md:mt-2 lg:mt-0 dark:text-accent-3">
-                <h1>
-                  4.5{" "}
-                  {/* {props.vehicleRating === null
-                    ? "❗"
-                    : parseFloat(props.vehicleRating).toFixed(1)}{" "} */}
-                  ⭐
-                </h1>
+              <h1>
+  {props.rating === null 
+    ? "0 ⭐" 
+    : `${parseFloat(props.vehicleRating).toFixed(1)} ⭐`}
+</h1>
+
               </div>
             </div>
           </div>

@@ -47,7 +47,7 @@ export const getBookingById = async (req, res) => {
   const { customer_id } = user;
   try {
     const { rows } = await pool.query(
-      ` SELECT *,vp.* FROM booking b INNER JOIN vehicle_post vp ON vp.vehicle_number = b.vehicle_number WHERE b.booking_customer_id = $1`,
+      ` SELECT b.*, vp.*, c.* FROM booking b INNER JOIN vehicle_post vp ON vp.vehicle_number = b.vehicle_number INNER JOIN customer c ON vp.customer_id = c.customer_id WHERE b.booking_customer_id = $1;`,
       [customer_id]
     );
     if (rows.length === 0) {

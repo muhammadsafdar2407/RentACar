@@ -12,6 +12,7 @@ import BookingRoute from "./src/routes/booking.js";
 import MessageRoute from "./src/routes/message.js";
 import NotificationRoute from "./src/routes/notification.js";
 import CloudinaryRoute from "./src/routes/cloudinary.js";
+import PromotionRoute from "./src/routes/promotion.js";
 import http, { get } from "http";
 import { Server } from "socket.io";
 import pool from "./src/config/database.js";
@@ -33,7 +34,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "RentACar",
-  password: "fast",
+  password: "abc123xyz",
   port: 5432,
 });
 db.connect();
@@ -59,6 +60,7 @@ app.use("/booking", BookingRoute);
 app.use("/chat", MessageRoute);
 app.use("/notification", NotificationRoute);
 app.use("/cloudinary", CloudinaryRoute);
+app.use("/promotion",PromotionRoute );
 
 const io = new Server(server, {
   cors: {
