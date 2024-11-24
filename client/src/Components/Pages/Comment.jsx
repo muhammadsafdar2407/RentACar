@@ -1,7 +1,17 @@
 import React from "react";
 
 const Comment = (props) => {
+
+  if (props.stars === undefined) {
+    return (
+      <div className="flex items-center">
+        <span className="text-gray-400">Loading...</span>
+      </div>
+    );
+  }
+
   const stars = () => {
+    console.log(props);
     const yellowStars = Array(props.stars)
       .fill()
       .map((_, i) => (

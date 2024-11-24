@@ -141,7 +141,7 @@ const PostDetails = ({ socket }) => {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    //event.preventDefault();
     if (newComment.trim() === "") return;
     resetInputFields();
     try {
