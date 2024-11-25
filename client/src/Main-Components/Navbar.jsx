@@ -68,8 +68,8 @@ const Navbar = ({ socket }) => {
             <div className="logo flex justify-center items-center gap-4">
               <Link to="/">
                 <h1 className="text-3xl font-bold text-accent-1 dark:text-accent-1">
-                  <span className="text-accent-2 dark:text-accent-3">Ride</span>
-                  Bnb
+                  <span className="text-accent-2 dark:text-accent-3">Gear</span>
+                  Up
                 </h1>
                 {/* <img src={RideBnb} alt="logo" className="w-[200px]" /> */}
               </Link>

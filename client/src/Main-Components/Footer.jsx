@@ -50,12 +50,17 @@ const Footer = () => {
         <div className="xl:max-w-[1200px] max-w-[90%] py-10 px-4 lg:pt-20 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
             <div className="col-span-full lg:col-span-1">
+              <Link to='/'>
               <div
                 className="flex-none font-semibold text-accent-1"
                 aria-label="Brand"
               >
-                <h1 className="text-2xl font-bold">RideBnb</h1>
+                <h1 className="text-2xl font-bold">
+                <span className="text-accent-2 dark:text-accent-3">Gear</span>
+                Up
+                </h1>
               </div>
+              </Link>
             </div>
 
             <div className="col-span-1">

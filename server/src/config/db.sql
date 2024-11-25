@@ -12,6 +12,7 @@ create table customer(
 );
 
 CREATE table vehicle_post(
+    vehicle_number varchar(50),
     customer_id uuid not null,
     vehicle_name varchar(50) not null,
     vehicle_type varchar(50) not null,
@@ -20,7 +21,6 @@ CREATE table vehicle_post(
     vehicle_color varchar(50) not null,
     vehicle_description text not null,
     address varchar(50) not null,
-    vehicle_number varchar(50),
     vehicle_listing_type varchar(50),
     vehicle_features varchar(200) not null,
     vehicle_image VARCHAR(100) not null,
@@ -55,6 +55,7 @@ create table booking(
     end_date varchar(12) not null,
     total_price DECIMAL(10,2) not null,
     foreign key (booking_customer_id) references customer(customer_id),
+    foreign key (owner_id) references customer(customer_id),
     foreign key (vehicle_number) references vehicle_post(vehicle_number) on delete cascade
 );
 
@@ -68,26 +69,11 @@ create TABLE notifications(
     foreign key (receiver_id) references customer(customer_id)
 );
 
-
-
---NOt USed
 create table conversation(
     conversation_id uuid primary key default uuid_generate_v4(),
     members uuid[] not null,
     created_at timestamp default now(),
     updated_at timestamp default now()
-);
-
-
-create table vehicle_review(
-    vehicle_review_id serial primary key,
-    customer_id int not null,
-    vehicle_post_id int not null,
-    review varchar(50) not null,
-    rating int not null,
-    created_at timestamp default now(),
-    foreign key (customer_id) references customer(customer_id),
-    foreign key (vehicle_post_id) references vehicle_post(vehicle_post_id)
 );
 
 create table message(
@@ -109,3 +95,9 @@ create table online_users(
     last_seen timestamp default now(),  
     foreign key (customer_id) references customer(customer_id)
 );
+
+create table promotions(
+    email varchar(255) primary key,
+    customer_id uuid,
+    foreign key (customer_id) references customer(customer_id)
+)
