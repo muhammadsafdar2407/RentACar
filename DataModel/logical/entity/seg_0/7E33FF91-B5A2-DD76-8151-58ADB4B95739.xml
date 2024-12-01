@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E33FF91-B5A2-DD76-8151-58ADB4B95739" name="promotions">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>EA8BB265-E183-E80E-F79A-ECAB51381B64</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="email" id="7CD8EF64-14EE-B25B-207F-751F62C29606">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>ADC6B34F-59A9-4857-B47E-BC4584D72887</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9B009E0A-FC66-1AB8-E0A5-556FE7483779</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer id" id="58D4604A-363E-AEA9-A628-1447400FFC38">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>3823100F-B53D-1A41-0761-EE06FBD74A46</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email1" id="4AC98AA5-3F99-5517-8326-C2F077282526">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:18:37 UTC</createdTime>
+<generatorID>077C227A-8A7F-72F2-DFA5-A7D842F3726D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>7B469C0E-9BD8-DC64-5147-1D233D921DF7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75B0B2EE-8DA2-314C-24D7-716CDD926A2E" name="promotions PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>F0CA5514-1D96-30C5-2942-580EE1E0DA4D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7CD8EF64-14EE-B25B-207F-751F62C29606</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

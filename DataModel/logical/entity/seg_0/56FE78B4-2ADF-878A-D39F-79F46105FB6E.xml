@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56FE78B4-2ADF-878A-D39F-79F46105FB6E" name="customer">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>12907926-C0BB-B41B-259A-84EA4013AE99</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="customer id" id="78B3E071-1376-F409-4364-A1A83624C0DF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>D818663E-8CF9-4DFF-F207-EE81C4B4FF9E</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<defaultValue>uuid_generate_v4()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customername" id="02A48DF5-4448-BB48-2DEE-341C8B5B4CD6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>02C0FEFC-EDB8-E19B-9B24-46C72A01F70A</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="6D426F23-7509-A766-0B83-23D5324C699C">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>3E99F2DE-F41A-C58F-FB7F-240F42B204BF</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="7B469C0E-9BD8-DC64-5147-1D233D921DF7">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>07AC7927-53AA-F337-9FCD-44EF83492012</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="536462E7-3555-7731-F126-336346BC6DDC">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>68001E3C-5E2A-4D8A-6279-6CE4D1CDCC26</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="updated at" id="0FD97388-349B-14BD-11B7-BFAF7F839474">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>AF28B872-B354-C087-E10F-244742A5215F</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone number" id="D9672A1A-45C5-2D26-00A5-2463B580C17A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>892FE6E9-3CF4-2EFA-E181-6D2AB27EAB91</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="2D796D3A-A4C2-FC43-5085-CCF486015182">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>24C6D377-5387-C6BD-3ADE-0B8F3A2413C6</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="389EB4E1-53E8-4F26-52D7-FBC0C0DE7A73" name="INDEX 1">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>A567283F-3DBD-CD37-C623-5BC279F5B632</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7B469C0E-9BD8-DC64-5147-1D233D921DF7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7E586202-81B2-8530-6839-F1EF6B89B6E7" name="customer PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:28:46 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78B3E071-1376-F409-4364-A1A83624C0DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

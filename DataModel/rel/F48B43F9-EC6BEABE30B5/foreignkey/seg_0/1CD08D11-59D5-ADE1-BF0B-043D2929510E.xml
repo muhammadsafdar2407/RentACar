@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1CD08D11-59D5-ADE1-BF0B-043D2929510E" containerWithKeyObject="82FD1802-7FBE-E361-9C7D-95E40E315880" localFKIndex="EA56B155-619A-7AAE-5FC2-C03EADED7D8F" name="review_vehicle_post_FK">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>F5158943-0F34-D1F0-3ED4-0047C8DBFE61</importedID>
+<referredTableLongName>vehicle_post</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>931C93BB-1F00-0AB7-310B-F07D2B02A4BD</referredTableID>
+<keyObject>020AB33E-8752-0599-0555-10D444E795A0</keyObject>
+<referredKeyID>020AB33E-8752-0599-0555-10D444E795A0</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>vehicle_number</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

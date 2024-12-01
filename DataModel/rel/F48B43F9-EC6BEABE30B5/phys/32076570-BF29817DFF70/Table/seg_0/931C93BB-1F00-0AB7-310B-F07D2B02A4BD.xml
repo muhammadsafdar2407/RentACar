@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="vehicle_post" directorySegmentName="seg_0" id="931C93BB-1F00-0AB7-310B-F07D2B02A4BD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="listing_type" id="1058E6F1-8933-3F46-B79B-98C28AE04CA9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_year" id="2EC36EE3-BEA8-E181-5D0B-A137B516A1D5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="address" id="34B47B3C-3239-EC99-CF34-2DE260690004">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_brand" id="4655A2DC-2441-D053-1289-6102AF1C4396">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="customer_email" id="5FCF06C5-2919-D6A4-114F-D5D146184810">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_at" id="625D15B0-CBB7-E2A6-415A-9CDDAC42EE2B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="customer_id" id="67E22A57-04BB-0AC2-2025-390D03916E4D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="price_per_day" id="8461DC2D-2566-D191-372C-9D12611E394B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_image" id="87B03A3E-AF17-2A54-2807-5D52662D4AD2">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_description" id="897A1DF3-FE37-9975-1830-65650B66168A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_color" id="B170CF87-AE81-A0C5-51A3-38AA1061CC2F">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="available" id="C065B7E1-53C2-0B73-4F21-F993CAABC131">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_name" id="C98DBEA2-D765-9ABC-F263-483BB0F8B270">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_type" id="E8724295-8609-3867-DBD8-CA157A74EDCF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_features" id="F3CABE62-DED0-D821-26AA-66C3A5AA8D78">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vehicle_number" id="F49BEDF3-FF89-8ABF-2F1F-378E34A4997D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="vehicle_post_customer_FK" id="66507A61-E797-356F-4379-7B07DD12EF98">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="vehicle_post_PK" id="020AB33E-8752-0599-0555-10D444E795A0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

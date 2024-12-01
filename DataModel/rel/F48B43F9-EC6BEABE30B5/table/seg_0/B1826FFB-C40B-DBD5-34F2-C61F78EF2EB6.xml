@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1826FFB-C40B-DBD5-34F2-C61F78EF2EB6" name="booking">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>0EEE39EB-F5F1-70F5-9FC0-792C07F69A79</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="booking_id" id="CEC7DB9A-7E70-5E53-BF00-C1ED7B32A3C6">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>24483EC6-1B8E-6E8E-867B-26649F77F834</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bk_customer_id" id="49D34D57-82DF-4F55-F4BD-574236F07921">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7B888C1B-4844-84BC-0499-59BC9EE3C402</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_id" id="D1A835B4-125E-E7C9-4671-1478341DB836">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>06A077F0-093C-20B9-604E-FDFCC1CE256A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_post_vehicle_number" id="31FBBC77-BD26-F793-2339-980208117D29">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>935C375B-F744-651A-967F-4615122C15F8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA5AFDBB-F51F-8DC4-32CA-10F86EC15834" referredColumn="F49BEDF3-FF89-8ABF-2F1F-378E34A4997D"/>
+</associations>
+</Column>
+<Column name="total_cost" id="32A480C3-2C15-9E1E-0574-35704F4D1C0B">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>EC6D0A2B-2A05-BD2A-DB19-EEC8C845D952</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>2A558509-BA79-26B6-1F0E-E026BF358B79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_status" id="7E3EE947-E3A2-3749-BB02-E38BFA51CD59">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>9506891A-82DE-B8AD-779B-52E7BE3D8F0C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="CF38EE5E-B3A9-BF98-BCB2-08FA3963FE08">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>B3D2C290-F639-5348-3EEC-9344E14DCB22</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="3DF42CE1-4820-AAC8-7F89-384CCC2CB7AC">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>83220F53-8BD4-1B0D-C569-F77040C31AB9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A917AE8A-CB07-2800-2EB7-C73291D7CE7B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="5C9A6DD4-E7DA-12E3-B4F8-881D430B729A">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>42C4EE7B-48FE-EB86-F6CC-8F5253EF8461</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A917AE8A-CB07-2800-2EB7-C73291D7CE7B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_price" id="472974C4-D16A-5F6C-10CB-9467C3038F1D">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7C28CED3-5465-C5FC-ACCF-BEC162DA8AA8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>2A558509-BA79-26B6-1F0E-E026BF358B79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_email" id="F735BE1D-D843-DAC7-CF99-8E76B9ADB2C8">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>72D786BE-E1FE-FB10-DDE5-7936E9425563</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="265D1855-C915-CC69-1FE0-8625AEDBB4F2" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+<Column name="customer_email1" id="3E1B96A0-00E5-B839-2077-73E1500426AA">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>353986D4-ECFE-18BD-D360-0A70AAA19BBC</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C5B9038-E1A3-AD4A-698C-5FE915439BB7" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E63E3580-0BA4-D6D9-E3AB-C579C64D1DD7" name="booking_PK">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>D5FD21C0-5CEA-B4EC-DBA3-037C6FF21B55</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEC7DB9A-7E70-5E53-BF00-C1ED7B32A3C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E16669D-CDF7-CBAF-A20C-5DFB07EDD974" name="booking_vehicle_post_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31FBBC77-BD26-F793-2339-980208117D29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E51BD9BD-7C4E-9A55-6E18-BB83D71167E2" name="booking_customer_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>4D718EA7-CB4A-0382-0798-D920C3D77A8F</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F735BE1D-D843-DAC7-CF99-8E76B9ADB2C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A7CA2A7-4134-6ABA-9096-BFF1A1C3B093" name="booking_customer_FKv2">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>15B076BB-BA59-CCD1-8FF4-790C77A08DBE</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E1B96A0-00E5-B839-2077-73E1500426AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="931C93BB-1F00-0AB7-310B-F07D2B02A4BD" name="vehicle_post">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>50F855FF-B289-7104-4BDC-D8E9E4DB7E1C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicle_number" id="F49BEDF3-FF89-8ABF-2F1F-378E34A4997D">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>FEB8759A-0FDD-64D2-94A6-C866B1190806</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="67E22A57-04BB-0AC2-2025-390D03916E4D">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>857AE174-3939-9152-5D97-78D00ACC7424</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_name" id="C98DBEA2-D765-9ABC-F263-483BB0F8B270">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>CDFD90B1-114C-0FCE-1B59-B48F7B8447F0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_type" id="E8724295-8609-3867-DBD8-CA157A74EDCF">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7AD716EC-4178-7171-1F08-CE0E2D4D4011</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_brand" id="4655A2DC-2441-D053-1289-6102AF1C4396">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>B434DBFC-1D8C-E67C-92AA-130EAAB71587</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_year" id="2EC36EE3-BEA8-E181-5D0B-A137B516A1D5">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>6A793AAC-69EC-DB84-6758-76A38DE87D8B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_color" id="B170CF87-AE81-A0C5-51A3-38AA1061CC2F">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>F4F03CB0-75C8-FBE3-17D3-9A775190BD7B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_description" id="897A1DF3-FE37-9975-1830-65650B66168A">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>1856C325-646E-CEC7-D7C0-B37D76DCAE49</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="34B47B3C-3239-EC99-CF34-2DE260690004">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>685BCB2F-C084-901C-8C04-5B9DABDA2ADD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="listing_type" id="1058E6F1-8933-3F46-B79B-98C28AE04CA9">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>767354AD-4F3B-6606-C924-53B8A64EF797</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_features" id="F3CABE62-DED0-D821-26AA-66C3A5AA8D78">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7F007D00-25AC-48DA-161B-0CCBE40A3CB2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C6BE2F0-37D9-A379-B3AD-300EADB6D636</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_image" id="87B03A3E-AF17-2A54-2807-5D52662D4AD2">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>A4191CB1-95A3-86CA-CF57-6FA08F717CF8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="625D15B0-CBB7-E2A6-415A-9CDDAC42EE2B">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>E5068F02-D4F8-6E78-169E-3710135B04D5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="available" id="C065B7E1-53C2-0B73-4F21-F993CAABC131">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>892EF111-5A3C-DD6A-21CB-6A9FE5A1F94D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_per_day" id="8461DC2D-2566-D191-372C-9D12611E394B">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>AB039ADD-C0CC-4975-4FC9-4D5E128B7CC7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>2A558509-BA79-26B6-1F0E-E026BF358B79</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_email" id="5FCF06C5-2919-D6A4-114F-D5D146184810">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>75896A0D-EF87-39B2-F0AF-BE8A94A127EA</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2002ACD3-D504-A97B-E772-D00AA9CB7E6B" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="020AB33E-8752-0599-0555-10D444E795A0" name="vehicle_post_PK">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>87093424-0717-A8BD-8425-4456ADA59F3C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F49BEDF3-FF89-8ABF-2F1F-378E34A4997D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66507A61-E797-356F-4379-7B07DD12EF98" name="vehicle_post_customer_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>197FA565-6EAF-F20C-9883-9722FC8E5F52</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FCF06C5-2919-D6A4-114F-D5D146184810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

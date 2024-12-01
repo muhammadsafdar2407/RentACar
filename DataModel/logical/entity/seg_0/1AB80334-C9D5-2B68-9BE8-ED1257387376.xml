@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1AB80334-C9D5-2B68-9BE8-ED1257387376" name="notifications">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>963EE527-9A33-B18D-50D7-5F41605D6350</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="notification id" id="54EEA8E8-58C4-2302-06A8-BEF204454B94">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>2F474358-F200-E71A-D0FF-20685BBDFD8D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sender id" id="E2F49A7B-BFBB-7DC6-CA22-61ED94D8E190">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>FE41A81A-D244-BF9B-1977-3088507F54DF</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="receiver id" id="604E7C4B-6EF1-2D51-7913-48E89C087895">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>2D4120ED-8223-A3FC-3F3B-867EB2ECDBE6</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="notification message" id="2E4098EA-3C95-B392-F9D7-DB65D3A8383E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>56DFCCD5-DD80-03DC-EF23-C692910E3F2E</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="0D6F30CD-DDBF-D340-F3FA-254B5209EC30">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:15:32 UTC</createdTime>
+<generatorID>5F35533D-E1B5-44E1-9729-4916E322F2AC</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>7B469C0E-9BD8-DC64-5147-1D233D921DF7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email1" id="509C97FC-6F80-367B-60A5-5A892E1577B9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:15:54 UTC</createdTime>
+<generatorID>90029196-64E4-B1F3-854C-933AFA06C8BE</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>7B469C0E-9BD8-DC64-5147-1D233D921DF7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B749407C-951F-4C84-6CB8-15F59294F262" name="notifications PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>CE79C532-1BE8-F2B3-87C3-C89746AE69EB</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54EEA8E8-58C4-2302-06A8-BEF204454B94</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

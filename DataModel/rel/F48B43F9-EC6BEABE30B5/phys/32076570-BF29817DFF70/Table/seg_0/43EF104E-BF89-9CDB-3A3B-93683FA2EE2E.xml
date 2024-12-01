@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="online_users" directorySegmentName="seg_0" id="43EF104E-BF89-9CDB-3A3B-93683FA2EE2E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="customer_email" id="2457B0BB-8AAB-7420-55FE-4B72C9F898C6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="last_seen" id="5EAA2577-8AA6-90E3-B26C-DE387812BA80">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="customer_name" id="857ABB4F-B086-A8C3-E0B1-2142E400F36E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="socket_id" id="EB2E2EAA-BD64-69F6-3764-1449C549108C">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="customer_id" id="FEA95D23-C3E1-A5B7-413D-15E165A18A3E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="online_users__IDX" id="972DF7CC-A6AB-2A37-69F9-F3DBD64888E6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="online_users_customer_FK" id="89DD7922-1116-E616-6A93-064A289762BE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="online_users_PK" id="30B48247-8360-8EA5-179C-04B1FC5EE650">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

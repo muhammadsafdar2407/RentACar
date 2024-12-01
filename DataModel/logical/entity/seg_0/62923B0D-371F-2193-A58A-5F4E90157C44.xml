@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62923B0D-371F-2193-A58A-5F4E90157C44" name="message">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>E0AE01DD-9BC0-BCF7-1487-7E538C00BAF3</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="message id" id="9063628A-10DA-C8C8-632D-5C53D568BA77">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>F65E19B8-BC5E-0D37-3E08-DBDB366D3A11</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="conversation id" id="4C6CDA88-8FCE-A002-2FFD-D6AC6CFF3EB5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>D4330B78-6073-2C6B-34A3-B1D1FF3A3895</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sender id" id="9EE76764-15B1-CCC9-422B-5D5B147BF7B0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>4A5A2E59-F43B-CB0C-61E2-222590A629D8</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="receiver id" id="C279C845-26C2-F4D1-CF62-F0CDD26D4F34">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>26A11A45-870C-F569-B5B0-F4B5FB4CAC0A</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="message" id="DBD8945E-97D9-7839-B705-EF76A78D472F">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>CD355C9C-05EC-097D-BAD1-568121CD3393</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="C9AF1621-5BC9-6888-2A36-058FBFFBACA7">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>4AD73D29-E1E9-7E90-BB07-45687F453CB7</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="229A141A-0DE7-F051-5759-DA1D41551344">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:16:33 UTC</createdTime>
+<generatorID>9FFBA6CF-EE6D-C3E1-4CAA-1D61385E2536</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>7B469C0E-9BD8-DC64-5147-1D233D921DF7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email1" id="357E73D3-0110-21EA-A1CE-DDD623142A9E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:16:39 UTC</createdTime>
+<generatorID>91D5BCCE-B711-2942-15F8-F9055292852B</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>7B469C0E-9BD8-DC64-5147-1D233D921DF7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="conversation id1" id="45CF601C-FB5A-6A76-92C7-CE382DB47EBB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:24:41 UTC</createdTime>
+<generatorID>F2B99740-B6E2-E8B9-2FA7-BC2518C6083D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<referedAttribute>FF4278AC-4931-70BC-E938-FF6FCBFC3688</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CF0EB967-D06C-8D0E-D2CB-FAC46366AC59" name="message PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>680727AF-08B2-ED1C-2B36-402802C2DA33</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9063628A-10DA-C8C8-632D-5C53D568BA77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

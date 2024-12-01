@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12907926-C0BB-B41B-259A-84EA4013AE99" name="customer">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>A8EBE6DF-2241-140B-27A4-700E2687202E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="D818663E-8CF9-4DFF-F207-EE81C4B4FF9E">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>FE59FE2E-FEB4-9975-C24E-9E2EB2CEA765</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<defaultValue>uuid_generate_v4()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customername" id="02C0FEFC-EDB8-E19B-9B24-46C72A01F70A">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7DD3F2BE-7FE1-C8C1-0AC3-A70FFEB4EFCF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="3E99F2DE-F41A-C58F-FB7F-240F42B204BF">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>9E76F93B-5CC0-582F-132B-2C6F12C32AF7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="07AC7927-53AA-F337-9FCD-44EF83492012">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>308BD72D-5D11-A7E3-0120-A39AF7554393</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="68001E3C-5E2A-4D8A-6279-6CE4D1CDCC26">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>6F7AAC4C-AE10-8E0F-2F74-9DD943FCEF5B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="AF28B872-B354-C087-E10F-244742A5215F">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>1DDC57C1-13C8-7645-AEDE-8C0382326131</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="892FE6E9-3CF4-2EFA-E181-6D2AB27EAB91">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>3C1868C9-25F0-D4EE-1BF1-2A7B20564FF6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="24C6D377-5387-C6BD-3ADE-0B8F3A2413C6">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>9B038BE3-6259-3720-147D-75F73FE7CC32</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="69C6A238-F4E3-699A-9C58-2883C02843AF" name="customer_PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:29:00 UTC</createdTime>
+<generatorID>7E586202-81B2-8530-6839-F1EF6B89B6E7</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D818663E-8CF9-4DFF-F207-EE81C4B4FF9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A567283F-3DBD-CD37-C623-5BC279F5B632" name="customer_email_UN">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>D5EC5B89-E1B8-BB28-9CDF-7F69CC1ACC85</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

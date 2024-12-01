@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0AE01DD-9BC0-BCF7-1487-7E538C00BAF3" name="message">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>E7D66004-2082-F11B-C0A8-A48919D98DA6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="message_id" id="F65E19B8-BC5E-0D37-3E08-DBDB366D3A11">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>6E3BB127-19BB-58A5-48C8-281C72CD196F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="conversation_id" id="D4330B78-6073-2C6B-34A3-B1D1FF3A3895">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>18BFBAB8-C0CD-90C2-AFB5-77F7D5609EC1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sender_id" id="4A5A2E59-F43B-CB0C-61E2-222590A629D8">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>E2AAA411-7DDC-9554-B55B-DEC1EF730EB9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="receiver_id" id="26A11A45-870C-F569-B5B0-F4B5FB4CAC0A">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>D859E14A-EBFC-CDBF-A3F7-0A6D0A540EA0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="message" id="CD355C9C-05EC-097D-BAD1-568121CD3393">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>AE7196EA-B1A0-8702-988D-12CA4E30B523</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="4AD73D29-E1E9-7E90-BB07-45687F453CB7">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>0100A673-46CE-4F76-43E2-6EF0ABC9E734</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>082D75F0-1126-D626-5E0E-803E66F7B9B7</domain>
+<defaultValue>NOW()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_email" id="18FEFC06-A6EE-7463-999F-D4761C515F37">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>229A141A-0DE7-F051-5759-DA1D41551344</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB3CEDBA-69FF-1FF2-C9D7-537095983BB5" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+<Column name="customer_email1" id="637C0FF7-144F-258B-5C34-12B0BB8FAACB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>357E73D3-0110-21EA-A1CE-DDD623142A9E</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C26B88B8-BFBC-4431-436B-0CCBB2F6C553" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+<Column name="conversation_conversation_ID1" id="9C97AB8B-4729-F265-4507-9CF351BB780B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="conversation_id1" id="E28DA1A8-3A6E-F2E1-33D6-B786E343F358">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:29:00 UTC</createdTime>
+<generatorID>45CF601C-FB5A-6A76-92C7-CE382DB47EBB</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D08D734-C246-C6AD-9719-BB9C0A461E8B" referredColumn="C42D6195-3114-14D9-1518-1181635F75D4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="680727AF-08B2-ED1C-2B36-402802C2DA33" name="message_PK">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>EDDE7EA0-4B6E-3E31-EC6B-6BB864658288</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F65E19B8-BC5E-0D37-3E08-DBDB366D3A11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="349E4CA8-45ED-6AE5-F289-DF84018EE5C9" name="message_customer_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>9FFBA6CF-EE6D-C3E1-4CAA-1D61385E2536</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18FEFC06-A6EE-7463-999F-D4761C515F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25CA5603-CBE1-713F-A389-6F3352A2CF4D" name="message_customer_FKv2">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>91D5BCCE-B711-2942-15F8-F9055292852B</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="637C0FF7-144F-258B-5C34-12B0BB8FAACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78FFA12D-B57D-38B9-C1CC-9914EB29E9F7" name="message_conversation_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>F2B99740-B6E2-E8B9-2FA7-BC2518C6083D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E28DA1A8-3A6E-F2E1-33D6-B786E343F358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

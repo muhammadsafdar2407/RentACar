@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="promotions" directorySegmentName="seg_0" id="EA8BB265-E183-E80E-F79A-ECAB51381B64">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="customer_id" id="3823100F-B53D-1A41-0761-EE06FBD74A46">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="customer_email" id="5CDF9041-FFF8-CD7A-0DA5-25574DE97CCD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="ADC6B34F-59A9-4857-B47E-BC4584D72887">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="promotions__IDX" id="C5EE2488-F62D-B15B-09E2-B358B66E79F8">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="promotions_customer_FK" id="E368D113-0532-6439-47FC-5BB064CC25CD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="promotions_PK" id="F0CA5514-1D96-30C5-2942-580EE1E0DA4D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

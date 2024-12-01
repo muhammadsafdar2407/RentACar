@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="customer" directorySegmentName="seg_0" id="12907926-C0BB-B41B-259A-84EA4013AE99">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="customername" id="02C0FEFC-EDB8-E19B-9B24-46C72A01F70A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="07AC7927-53AA-F337-9FCD-44EF83492012">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="address" id="24C6D377-5387-C6BD-3ADE-0B8F3A2413C6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="password" id="3E99F2DE-F41A-C58F-FB7F-240F42B204BF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_at" id="68001E3C-5E2A-4D8A-6279-6CE4D1CDCC26">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="phone_number" id="892FE6E9-3CF4-2EFA-E181-6D2AB27EAB91">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="updated_at" id="AF28B872-B354-C087-E10F-244742A5215F">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="customer_id" id="D818663E-8CF9-4DFF-F207-EE81C4B4FF9E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>uuid_generate_v4()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="customer_PK" id="69C6A238-F4E3-699A-9C58-2883C02843AF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:29:00 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="customer_email_UN" id="A567283F-3DBD-CD37-C623-5BC279F5B632">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

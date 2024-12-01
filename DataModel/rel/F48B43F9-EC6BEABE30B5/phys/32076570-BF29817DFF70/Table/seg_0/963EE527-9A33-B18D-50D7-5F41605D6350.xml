@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="notifications" directorySegmentName="seg_0" id="963EE527-9A33-B18D-50D7-5F41605D6350">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="customer_email" id="117EC9E2-F27F-8229-4D81-8E53AB5418AC">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="receiver_id" id="2D4120ED-8223-A3FC-3F3B-867EB2ECDBE6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="notification_id" id="2F474358-F200-E71A-D0FF-20685BBDFD8D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="notification_message" id="56DFCCD5-DD80-03DC-EF23-C692910E3F2E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="customer_email1" id="830C0B3D-FACA-F900-F076-3C83FBF7B7A9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sender_id" id="FE41A81A-D244-BF9B-1977-3088507F54DF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="notifications_customer_FKv2" id="3BC1B829-DCB5-8EFF-4CE1-06430FCAB396">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="notifications_customer_FK" id="90B9D59C-01D5-CB1D-ED98-0A867ACEAB83">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="notifications_PK" id="CE79C532-1BE8-F2B3-87C3-C89746AE69EB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="booking_vehicle_post_FK" directorySegmentName="seg_0" id="3C2E4788-E971-2F89-FC63-771C341A59F0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:34 UTC</createdTime>
+<generatorID>AA5AFDBB-F51F-8DC4-32CA-10F86EC15834</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<engineerTo>
+<item key="F48B43F9-0C3D-2358-B640-EC6BEABE30B5" value="true"/>
+</engineerTo>
+<sourcePk>9C05E844-9E0D-A4F9-B14A-05A9026E2E89</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F64C3A1E-8F7C-6F88-873A-2AD61571CCCF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>35CEECF8-F02C-C82D-D082-5948138A6597</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

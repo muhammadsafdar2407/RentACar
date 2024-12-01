@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="conversation" directorySegmentName="seg_0" id="99E626E7-A560-C8BC-F31D-2AD389FE60D1">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="conversation_ID1" id="02BC354D-D73F-5E7C-FA39-7FAF182A9345">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_at" id="04A6C848-B0EE-EE2C-5A19-F5D2B20707F3">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="members" id="1B7E320B-E122-5A1D-CDE3-8ABD6A80339E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="updated_at" id="597E7C18-EE59-363A-E609-6DADA9174CD8">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>NOW()</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="conversation_id" id="C42D6195-3114-14D9-1518-1181635F75D4">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:13 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<defaultValue>uuid_generate_v4()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="conversation_conversation_id_UN" id="FBDAF326-CFEE-752D-ECAA-CF18068DFFDD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:29:00 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="conversation_PK" id="510B4A6E-CC67-C04A-FC43-45936F5DC4C4">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:32:41 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="conversation_conversation_id_UN" id="FBDAF326-CFEE-752D-ECAA-CF18068DFFDD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:29:00 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="RentACar_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="082D75F0-1126-D626-5E0E-803E66F7B9B7">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT015</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DECIMAL_10_2_0" id="2A558509-BA79-26B6-1F0E-E026BF358B79">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>10</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="3C6BE2F0-37D9-A379-B3AD-300EADB6D636">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>200</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="4542D7ED-4034-4365-D35B-C06892FF2CF5">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="45BCCA01-C971-4A52-7EB3-6E7AEC80C8AA">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="9B009E0A-FC66-1AB8-E0A5-556FE7483779">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>255</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_12" id="A917AE8A-CB07-2800-2EB7-C73291D7CE7B">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>12</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="F2F45CD7-979B-DAFB-3783-A0C912985AE7">
+         <createdBy>user</createdBy>
+         <createdTime>2024-11-25 18:10:17 UTC</createdTime>
+         <ownerDesignName>DataModel</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>RentACar_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

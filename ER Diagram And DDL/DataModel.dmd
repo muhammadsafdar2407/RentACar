@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DataModel" id="4F1D413D-4D14-2CC4-BD4C-F626F11A433F" version="3.5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:09:48 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4F1D413D-4D14-2CC4-BD4C-F626F11A433F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8A9821FA-DB76-6BBE-F7D7-41A9C154223F">
+<designStoragePath>C:\RentACar</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

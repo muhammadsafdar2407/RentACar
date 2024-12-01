@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA8BB265-E183-E80E-F79A-ECAB51381B64" name="promotions">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>B61F6F82-20A3-5664-FF60-18C035EC53CF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email" id="ADC6B34F-59A9-4857-B47E-BC4584D72887">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>27E1C717-6F61-9EA3-C436-D3D41EAF79D4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9B009E0A-FC66-1AB8-E0A5-556FE7483779</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="3823100F-B53D-1A41-0761-EE06FBD74A46">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>7A31CE31-35D1-D6A3-319E-63D734636AB4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_email" id="5CDF9041-FFF8-CD7A-0DA5-25574DE97CCD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>4AC98AA5-3F99-5517-8326-C2F077282526</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2F45CD7-979B-DAFB-3783-A0C912985AE7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14477A3B-D49B-F3E6-C6E5-A45920307940" referredColumn="07AC7927-53AA-F337-9FCD-44EF83492012"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0CA5514-1D96-30C5-2942-580EE1E0DA4D" name="promotions_PK">
+<sourceDDLFile>RentACar.ddl</sourceDDLFile>
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:10:17 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<importedID>357F3960-5A63-0366-2326-61D6A5B17803</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADC6B34F-59A9-4857-B47E-BC4584D72887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5EE2488-F62D-B15B-09E2-B358B66E79F8" name="promotions__IDX">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>077C227A-8A7F-72F2-DFA5-A7D842F3726D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5CDF9041-FFF8-CD7A-0DA5-25574DE97CCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E368D113-0532-6439-47FC-5BB064CC25CD" name="promotions_customer_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-25 18:19:04 UTC</createdTime>
+<generatorID>077C227A-8A7F-72F2-DFA5-A7D842F3726D</generatorID>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CDF9041-FFF8-CD7A-0DA5-25574DE97CCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
