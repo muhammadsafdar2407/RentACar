@@ -2,6 +2,8 @@ import pool from "../config/database.js";
 
 export const createBooking = async (req, res) => {
   try {
+
+    console.log("Ennterd Create Booking..............................");
     const { vehicle_post_id, checkIn, checkOut, total_price } = req.body;
 
     //console.log("A: "+vehicle_number);
@@ -19,10 +21,12 @@ export const createBooking = async (req, res) => {
         (new Date(checkIn) - new Date(checkOut)) / (1000 * 60 * 60 * 24)
       )
     );
-    const total_cost = numDays * total_price;
+    
+    //total_price = numDays * total_price;
+    console.log('Numdays.....'+numDays)
     const queryText = `
-        INSERT INTO booking (vehicle_number, booking_customer_id, start_date, end_date, total_cost, total_price , owner_id)
-        VALUES ($1, $2, $3, $4, $5, $6, $7)
+        INSERT INTO booking (vehicle_number, booking_customer_id, start_date, end_date, total_price , owner_id)
+        VALUES ($1, $2, $3, $4, $5, $6)
         RETURNING *
         `;
     const values = [
@@ -30,7 +34,6 @@ export const createBooking = async (req, res) => {
       req.user.customer_id,
       checkIn,
       checkOut,
-      total_cost,
       total_price,
       vehicle_owner_id,
     ];
@@ -38,6 +41,13 @@ export const createBooking = async (req, res) => {
     return res.status(201).json(rows[0]);
   } catch (error) {
     console.error(error);
+
+    // if (error.code === 'P0001') {
+    //   return res.status(401).json({
+    //     message: "Cannot complete booking due to overlapping dates with another accepted booking.",
+    //   });
+    // }
+
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -69,8 +79,8 @@ export const bookedByUser = async (req, res) => {
   try {
     const { rows } = await pool.query(
       `SELECT * FROM booking WHERE vehicle_number = $1 AND booking_customer_id = $2 
-        AND booking_status = 'Accepted' 
-        OR booking_status = 'pending'
+        AND (booking_status = 'Accepted' 
+        OR booking_status = 'pending')
       `,
       [vehicle_number, customer_id]
     );
@@ -130,6 +140,11 @@ export const bookingAction = async (req, res) => {
     return res.status(200).json(response.rows[0]);
   } catch (error) {
     console.error(error);
+    if (error.code === 'P0001') {
+      return res.status(400).json({
+        message: "Cannot accept booking due to overlapping dates with another accepted booking.",
+      });
+    }
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };

@@ -54,7 +54,7 @@ const App = () => {
     if (emitNewUser.current) {
       if (user) {
         socket.current.emit("newUser", user);
-        toastSuccess(`Welcome to RideBnb ${user.customername}`);
+        toastSuccess(`Welcome to GearUp ${user.customername}`);
       }
     }
     emitNewUser.current = false;

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useContext } from "react";
 import axiosInstance from "../../Instance/instance";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
-
+import { toastError, toastSuccess } from "../Toast/Toast";
 import { FcApproval, FcCancel } from "react-icons/fc";
 import { ToastContainer } from "react-toastify";
 
@@ -42,7 +42,13 @@ function RequestsTable({ socket }) {
       console.log(res);
       getRequests();
     } catch (err) {
-      console.log(err);
+
+      if (err.response && err.response.status === 400) {
+        console.log('Caught Error 400:', err.response.data.message);
+        toastError(err.response.data.message);
+      } else {
+        console.error('Unexpected Error:', err);
+      }
     }
   };
 

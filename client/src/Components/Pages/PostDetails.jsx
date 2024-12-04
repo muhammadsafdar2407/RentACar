@@ -24,7 +24,6 @@ import { ToastContainer } from "react-toastify";
 import { toastError, toastSuccess } from "../Toast/Toast";
 import { AuthContext } from "../../Context/AuthContext";
 
-
 const PostDetails = ({ socket }) => {
   const [post, setPost] = useState({});
   const id = window.location.pathname.split("/")[2];
@@ -36,6 +35,7 @@ const PostDetails = ({ socket }) => {
   const [rated, setRated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [booked, setBooked] = useState(false);
+  const [isStateUpdated, setIsStateUpdated] = useState(false);
   // const owner_id = post?.customer_id;
   const { user } = useContext(AuthContext);
 
@@ -82,8 +82,11 @@ const PostDetails = ({ socket }) => {
     const diffTime = Math.abs(end - start);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     if (diffDays === 0) {
+      console.log("Return Num Days:  ", diffDays);
       return 1;
     }
+
+    console.log("Num Days:  ", diffDays);
 
     return diffDays;
   };
@@ -94,7 +97,6 @@ const PostDetails = ({ socket }) => {
       total_price: numberOfDays() * post.price_per_day,
     }));
   };
-  
 
   const handleSelect = (ranges) => {
     selectionRange.startDate = ranges.selection.startDate;
@@ -205,8 +207,54 @@ const PostDetails = ({ socket }) => {
     }
   }
 
+  const updateTotalPriceIfSell = async () => {
+    if (post.vehicle_listing_type === "Sell") {
+      console.log("Before update:", data.total_price);
+      console.log("Per day price:", post.price_per_day);
+  
+      // Await a Promise that resolves after the next render
+      await new Promise((resolve) =>
+        setData((prevData) => {
+          const updatedData = {
+            ...prevData,
+            total_price: post.price_per_day,
+          };
+          resolve(updatedData); // Resolves the Promise
+          return updatedData;
+        })
+      );
+  
+      console.log("State update queued for total_price.");
+    }
+  };
+
+  useEffect(() => {
+    if (isStateUpdated) {
+      console.log("Updated total_price:", data.total_price);
+  
+      // Perform additional actions after state update
+      setIsStateUpdated(false); // Reset the flag
+    }
+  }, [data.total_price, isStateUpdated]);
+
+
+  
   const handleBooking = async () => {
     try {
+      if (post.vehicle_listing_type === "Sell") {
+        console.log("Before update:", data.total_price);
+        console.log("Per day price:", post.price_per_day);
+  
+        setData((prevData) => ({
+          ...prevData,
+          total_price: post.price_per_day,
+        }));
+  
+        // Wait until the state update is reflected
+        setIsStateUpdated(true);
+        
+      }
+
       socket.current.emit("notify", {
         notification_message: `Booking Request for ${post?.vehicle_name} from ${data.checkIn} to ${data.checkOut}`,
         receiver_id: post?.customer_id,
@@ -305,7 +353,6 @@ const PostDetails = ({ socket }) => {
       priceChange();
     }
   }, [data.checkIn, data.checkOut, post.price_per_day]);
-  
 
   return (
     <div className="dark:bg-dark-secondary">
@@ -437,7 +484,7 @@ const PostDetails = ({ socket }) => {
                     <span className="text-white text-xl font-medium flex gap-3 items-center">
                       <div className="relative inline-flex items-center justify-center w-250 h-10 px-4 py-2 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                         <span className="font-medium text-gray-600 dark:text-gray-300">
-                          {post.customername ?post.customername: "A"}
+                          {post.customername ? post.customername : "A"}
                         </span>
                       </div>
                     </span>
@@ -471,17 +518,12 @@ const PostDetails = ({ socket }) => {
                     <h1 className="text-[32px] mt-6 text-left font-semibold text-black dark:text-accent-3">
                       Description
                     </h1>
-                    <h1 className="mt-2">
-                      {post.vehicle_description}
-                    </h1>
-
+                    <h1 className="mt-2">{post.vehicle_description}</h1>
 
                     <h1 className="text-[32px] mt-6 text-left font-semibold text-black dark:text-accent-3">
                       Features
                     </h1>
-                    <h1 className="mt-2">
-                      {post.vehicle_features}
-                    </h1>
+                    <h1 className="mt-2">{post.vehicle_features}</h1>
 
                     <button
                       onClick={handleNotification}
@@ -598,7 +640,7 @@ const PostDetails = ({ socket }) => {
                             Rs.{" "}
                             {data.checkIn
                               ? numberOfDays() * post.price_per_day
-                              : 0}
+                              : post.price_per_day}
                           </span>{" "}
                         </h1>
                       </div>
@@ -628,7 +670,7 @@ const PostDetails = ({ socket }) => {
                       {pending ? (
                         <button
                           className="bg-yellow-500  w-full text-white p-3 rounded-md"
-                          disabled
+                          disabled={true}
                         >
                           Pending
                         </button>
@@ -641,8 +683,12 @@ const PostDetails = ({ socket }) => {
                         </button>
                       ) : (
                         <button
-                          onClick={handleBooking}
+                          onClick={() => {
+                            console.log("Rent Button");
+                            handleBooking();
+                          }}
                           className="button-transition bg-indigo-500 hover:bg-black w-full text-white p-3 rounded-md"
+                          disabled={false}
                         >
                           {post.vehicle_listing_type === "Rent"
                             ? "Rent"

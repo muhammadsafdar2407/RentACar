@@ -14,7 +14,7 @@ import { checkOwner } from "../middleware/checkOwner.js";
 // Create a booking
 router
   .route("/createBooking")
-  .post(isAuthenticated, checkOwner, isBooked, createBooking);
+  .post(isAuthenticated, checkOwner, createBooking);
 
 //Get booking for a user
 router.route("/getBookingById").get(isAuthenticated, getBookingById);

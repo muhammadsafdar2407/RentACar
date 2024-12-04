@@ -101,3 +101,31 @@ create table promotions(
     customer_id uuid,
     foreign key (customer_id) references customer(customer_id)
 )
+
+CREATE OR REPLACE FUNCTION check_booking_collision()
+RETURNS TRIGGER AS $$
+BEGIN
+    -- Check for overlapping dates with same vehicle_number and status 'accepted'
+    IF EXISTS (
+        SELECT 1
+        FROM booking
+        WHERE vehicle_number = NEW.vehicle_number
+          AND booking_status = 'Accepted'
+          AND (
+              (NEW.start_date::DATE, NEW.end_date::DATE) OVERLAPS (start_date::DATE, end_date::DATE)
+          )
+          AND booking_id != NEW.booking_id -- Exclude the current booking itself
+    ) THEN
+        RAISE EXCEPTION 'Cannot change status to "complete" due to overlapping booking with status "accepted"';
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER check_booking_status
+BEFORE UPDATE ON booking
+FOR EACH ROW
+WHEN (OLD.booking_status = 'pending' AND NEW.booking_status = 'Accepted')
+EXECUTE FUNCTION check_booking_collision();
+
