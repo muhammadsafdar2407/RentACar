@@ -81,13 +81,22 @@ Monitors active users and their status for real-time features.
 - **Database Stress Tests:** Checking for scalability.
 
 ## Screenshots
+-  ![1](https://github.com/user-attachments/assets/98be17a8-7b61-462b-993e-54f34e734ddf)
 - **Login/Signup Page**
+- ![2](https://github.com/user-attachments/assets/e9ffc417-db84-4985-87c7-f2d2c22f89b1)
 - **Adding a Listing**
+- ![3](https://github.com/user-attachments/assets/ec42f872-b5d7-4cf7-a565-6274ecf43fbc)
 - **Filtered Searching**
+- ![4](https://github.com/user-attachments/assets/6d482231-fc57-4d45-afbc-bba79109a8db)
 - **Booking System**
+- ![5](https://github.com/user-attachments/assets/79f2a246-1bf5-43f7-8993-9389e4954a79)
 - **Profile View**
+- ![6](https://github.com/user-attachments/assets/6ead60de-c195-4b41-8432-11ecbcacd2da)
 - **Live Chat**
+- ![7](https://github.com/user-attachments/assets/2fe7c426-fc65-4d67-9bdb-b99bb97d3d0a)
 - **Comments & Reviews**
+- ![8](https://github.com/user-attachments/assets/33df2ae8-f5cd-46a2-870b-b5b3abb9d5c9)
+
 
 ## Conclusion
 GearUp provides an easy-to-use and efficient alternative for renting and selling vehicles. By streamlining the process of listing, communication, and booking, the platform directly connects sellers and buyers in a user-friendly way.
